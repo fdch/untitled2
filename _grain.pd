@@ -33,6 +33,7 @@
 #X msg 270 263 set dacout-\$1;
 #X obj 59 184 lop~ 2000;
 #X obj 59 205 hip~ 1800;
+#X obj 242 139 r grainlp;
 #X connect 0 0 12 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -71,3 +72,4 @@
 #X connect 31 0 16 0;
 #X connect 32 0 33 0;
 #X connect 33 0 15 0;
+#X connect 34 0 29 1;
