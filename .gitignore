@@ -1,0 +1,5 @@
+bin_*
+.DS_Store
+*.wav
+*.aup
+
