@@ -2,6 +2,9 @@
 
 ![untitled](https://raw.githubusercontent.com/fdch/untitled2/master/untitled2.jpg "untitled2")
 
+Performance patch for the acousmatic piece "Untitled2"
+
+
 ## To run the thing
 
 * From terminal:
