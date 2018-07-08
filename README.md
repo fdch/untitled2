@@ -17,12 +17,12 @@ $ pd main.pd
 
 ## Dependencies
 
-..* [fd_lib](https://github.com/fdch/fd_lib)
+.* [fd_lib](https://github.com/fdch/fd_lib)
 
 And you can get these on ``deken`` (Pd > Help > Find Externals) 
 
-..* vbap
-..* ggee
+.* vbap
+.* ggee
 
 
 ## Get Pure Data
