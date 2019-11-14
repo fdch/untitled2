@@ -1,6 +1,6 @@
 # UNTITLED2
 
-![untitled](https://raw.githubusercontent.com/fdch/untitled2/master/untitled2.jpg "untitled2")
+![untitled](https://raw.githubusercontent.com/fdch/untitled2/master/img/untitled2.jpg "untitled2")
 
 Performance patch for the acousmatic piece "Untitled2"
 
