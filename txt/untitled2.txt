@@ -1,0 +1,22 @@
+untitled2 
+
+Immersed on a digital environment, ``untitled2'' lives on the limit between field recording and synthesis, music composition and sound art. This liminality aims to resonate its way into the complex difference between art and life.
+
+It was composed and premiered during the ``Delian Academy for New Music'' held in Mikonos, Greece, in June 2018
+
+
+duration:
+09:53.46
+channels:
+2
+
+Tech info:
+
+This is a multichannel work for Laptop Performer. Depending on the number of available channels, the piece can be adapted from 4 to N channels. I have a 4 channel audio interface and a laptop to play the piece. However, if there is a house computer connected to a multichannel interface, the piece can be easily cloned from its github repository (github.com/fdch/untitled2), and can run on any OS because it is entirely made in Pure Data. Any questions, please contact me at fch226 [at] nyu [dot] edu.
+-----
+This is a multichannel work for Laptop Performer. Depending on the number of available channels, the piece can be adapted from 4 to N channels. The piece can be easily cloned from its github repository (github.com/fdch/untitled2), and can run on any OS because it is entirely made in Pure Data. If there is a house computer connected to a multichannel interface, I'd recommend using it instead of a laptop+interface situtation.
+
+
+bio:
+
+Fede Cámara Halac studied Licenciatura en Composición Musical at La Universidad Nacional de Córdoba (Argentina). He is a PhD Candidate in Music Composition & Theory at New York University (GSAS) with Jaime Oliver La Rosa and Elizabeth Hoffman. His research focuses on Database Multimedia Composition. His work is available at https://fdch.github.io/tv
