@@ -7,14 +7,13 @@ Performance patch for the acousmatic piece "Untitled2"
 
 ## To run it
 
-* From terminal:
-
 ```
+$ git clone https://github.com/fdch/untitled2.git
 $ cd untitled2/bin
 $ pd main.pd
 ```
 
-* Or simply open ``main.pd`` with your latest Pure Data.
+* Or simply click the green download button and open ``main.pd`` with your latest Pure Data.
 
 ## Dependencies
 
