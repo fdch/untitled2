@@ -1,0 +1,45 @@
+#N struct 2070-point float x0 float y0 float xs float ys float fg float
+in float gridx float gridy;
+#N struct 2223-point float x0 float y0 float xs float ys float fg float
+in float gridx float gridy;
+#N canvas 137 30 452 584 12;
+#X declare -lib else;
+#X obj 213 30 declare -lib else;
+#X obj 79 57 else/slider2d 127 127 -1 1 -1 1 1 255 255 255 0 0 0 0
+0 0 65 83 empty empty;
+#X msg 74 30 range -1 1;
+#X obj 118 192 atan2;
+#X floatatom 119 355 8 0 0 0 - - - 0;
+#X obj 204 321 sin;
+#X floatatom 204 349 8 0 0 0 - - - 0;
+#X obj 119 327 cos;
+#X obj 152 388 pack;
+#X obj 145 420 else/slider2d 127 127 -1 1 -1 1 1 255 255 255 0 0 0
+0 0 0 -0.997054 -0.0766967 empty empty;
+#X msg 206 390 range -1 1;
+#X obj 220 183 atan2;
+#X msg 220 159 1;
+#X floatatom 219 230 5 0 0 0 - - - 0;
+#X obj 221 206 * 2;
+#X obj 118 216 +;
+#X floatatom 133 245 5 0 0 0 - - - 0;
+#X obj 125 270 t a a;
+#X obj 245 126 loadbang;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 15 0;
+#X connect 5 0 6 0;
+#X connect 5 0 8 1;
+#X connect 7 0 4 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 10 0 9 0;
+#X connect 11 0 14 0;
+#X connect 12 0 11 0;
+#X connect 14 0 13 0;
+#X connect 14 0 15 1;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 17 0 7 0;
+#X connect 17 1 5 0;
+#X connect 18 0 12 0;

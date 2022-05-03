@@ -5,8 +5,10 @@
 #X obj 121 25 inlet;
 #X obj 51 105 hip~ 3;
 #X obj 60 128 throw~ mainrec-\$1;
+#X obj 51 190 hip~ 20;
 #X connect 0 0 4 0;
 #X connect 2 0 1 0;
 #X connect 3 0 2 0;
 #X connect 4 0 5 0;
-#X connect 4 0 1 0;
+#X connect 4 0 6 0;
+#X connect 6 0 1 0;
