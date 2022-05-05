@@ -347,6 +347,7 @@
 #X obj 88 230 b;
 #X obj 93 162 crand 20 100;
 #X obj 50 7 r cicaditas;
+#X msg 191 232 vis 1 1;
 #X connect 0 0 4 0;
 #X connect 1 0 6 0;
 #X connect 2 0 3 0;
@@ -368,6 +369,7 @@
 #X connect 15 0 2 0;
 #X connect 16 0 12 1;
 #X connect 17 0 4 0;
+#X connect 18 0 3 0;
 #X restore 24 129 pd cicadas ______;
 #N canvas 88 23 493 389 water 0;
 #X obj 88 166 t b b b;
@@ -418,7 +420,7 @@
 #X connect 19 0 20 0;
 #X connect 20 0 21 1;
 #X restore 24 150 pd water ________;
-#N canvas 558 366 505 328 clouds 0;
+#N canvas 347 194 505 328 clouds 0;
 #X obj 133 83 switch~;
 #X obj 12 35 noise~;
 #X obj 27 186 bp~ 65 2;
@@ -497,7 +499,7 @@
 #X connect 35 1 16 0;
 #X connect 36 0 25 0;
 #X restore 24 171 pd clouds _______;
-#N canvas 70 251 450 300 cricket 0;
+#N canvas 70 251 450 300 cricket 1;
 #X msg 23 116 all \$1;
 #X msg 23 34 1000;
 #X obj 127 147 pack;
@@ -1149,7 +1151,7 @@ ambsound-set 0 \; watervol-set 0 \; water-set 0 \; vol-set 0 \; cicadas-set
 #X connect 218 0 219 0;
 #X connect 219 0 215 0;
 #X restore 165 108 pd score ________;
-#N canvas 98 88 1141 615 controls 1;
+#N canvas 67 154 1141 615 controls 1;
 #X obj 26 102 vsl 15 128 0 1 0 0 ambsound ambsound-set ambsound 0 -9
 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 86 102 vsl 15 128 20 20000 1 0 ambhp ambhp-set ambhp 0 -9 0
@@ -1450,7 +1452,7 @@ gaviolpmax-set 461 \; gaviotab-set 7 13 \; gavioboid-set 1 \;;
 #X obj 26 519 nbx 5 14 -1e+37 1e+37 0 0 empty watervol watervol 0 -8
 0 10 #fcfcfc #000000 #000000 0 256;
 #X msg 26 537 \; water-set 0 \; watervol-set 0 \;;
-#N canvas 0 22 450 300 waterpreset 0;
+#N canvas 68 74 450 300 waterpreset 0;
 #X msg 95 92 \; water-set 0.001 \; grainlp-set 100 \; graintab-set
 2 1;
 #X restore 210 507 pd waterpreset;
@@ -1523,9 +1525,9 @@ gaviolpmax-set 461 \; gaviotab-set 7 13 \; gavioboid-set 1 \;;
 #000000 #000000;
 #X obj 26 21 bng 15 250 50 0 start start-set start 17 7 0 10 #c4fcc4
 #000000 #000000;
-#X obj 497 25 fd_stopwatch;
+#X obj 486 20 fd_stopwatch;
 #N canvas 0 23 450 300 _rdel-time 0;
-#X obj 101 101 cnv 15 233 20 empty _rdel-time-cnv section:_0 5 10 0
+#X obj 101 101 cnv 15 233 20 empty _rdel-time-cnv section:_1 5 10 0
 14 #fcfcfc #000000 0;
 #X obj 158 145 r _rdel-time;
 #X obj 158 166 unpack;
@@ -1537,8 +1539,8 @@ gaviolpmax-set 461 \; gaviotab-set 7 13 \; gavioboid-set 1 \;;
 #X msg 87 187 127 \, 0 \$1;
 #X obj 87 208 line;
 #X msg 87 229 \; _rdel-time-line \$1;
-#X obj 202 103 hsl 128 16 0 127 0 0 empty _rdel-time-line __ 10 10
-0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 202 103 hsl 128 16 0 127 0 0 empty _rdel-time-line _32845 10
+10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 205 199 f;
 #X msg 21 150 \; _rdel-time-line label _\$1;
 #X msg 42 110 symbol _;
@@ -1559,21 +1561,21 @@ gaviolpmax-set 461 \; gaviotab-set 7 13 \; gavioboid-set 1 \;;
 #X connect 12 0 15 0;
 #X connect 14 0 13 0;
 #X coords 0 -1 1 1 235 22 2 100 100;
-#X restore 99 22 pd _rdel-time;
-#X obj 1025 34 bng 15 250 50 0 stereo stereo-set stereo 17 7 0 10 #fcfcfc
+#X restore 88 17 pd _rdel-time;
+#X obj 1040 19 bng 15 250 50 0 stereo stereo-set stereo 17 7 0 10 #fcfcfc
 #202020 #202020;
-#X obj 1027 14 bng 15 250 50 0 quad quad-set quad 17 7 0 10 #d8fcd8
+#X obj 995 19 bng 15 250 50 0 quad quad-set quad 17 7 0 10 #d8fcd8
 #202020 #202020;
 #X obj 419 284 hradio 15 1 0 3 gaviopreset gaviopreset-set gaviopreset
 0 -8 0 10 #fcfcfc #000000 #000000 0;
 #X obj 981 273 hradio 15 1 0 2 cricpreset cricpreset-set cricpreset
 0 -8 0 10 #fcfcfc #000000 #000000 0;
-#X obj 685 580 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X obj 766 552 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X msg 566 537 \; _lorsig-set 0;
 #X text 610 47 cut cicadas at the end. once cicadas finish \, click
 panic;
-#X obj 365 23 tgl 20 0 auto-quit auto-quit-set AUTO\\\ QUIT 24 10 0
+#X obj 334 18 tgl 20 0 auto-quit auto-quit-set AUTO\\\ QUIT 24 10 0
 10 #fcfcfc #000000 #000000 0 1;
 #X text 606 4 after section 19: add cric \, gavio and turn lor-fr up
 and lorsig down.;
@@ -1585,6 +1587,8 @@ and lorsig down.;
 0 -8 0 10 #fcfcfc #000000 #000000 178 256;
 #X obj 716 302 tgl 15 0 set-num empty empty 17 7 0 10 #fcfcfc #000000
 #000000 0 1;
+#X obj 415 19 tgl 20 0 record record-set RECORD 24 10 0 10 #ffc7c6
+#000000 #000000 0 1;
 #X connect 98 0 89 0;
 #X connect 98 0 99 0;
 #X restore 165 129 pd controls _____;
@@ -1654,7 +1658,7 @@ and lorsig down.;
 #X obj 104 76 catch~ mainrec-3;
 #X obj 123 96 catch~ mainrec-4;
 #X obj 66 202 writesf~ 4;
-#X obj 165 131 r writesf;
+#X obj 257 29 r writesf;
 #X obj 165 172 f;
 #X obj 195 173 + 1;
 #X obj 195 194 t f f;
@@ -1665,11 +1669,14 @@ and lorsig down.;
 #X msg 257 241 stop;
 #X msg 256 113 4;
 #X obj 308 101 r recID;
+#X obj 256 57 spigot;
+#X obj 329 40 r record;
+#X obj 329 61 switch~;
 #X connect 0 0 4 0;
 #X connect 1 0 4 1;
 #X connect 2 0 4 2;
 #X connect 3 0 4 3;
-#X connect 5 0 12 0;
+#X connect 5 0 16 0;
 #X connect 6 0 7 0;
 #X connect 6 0 11 0;
 #X connect 7 0 8 0;
@@ -1683,6 +1690,9 @@ and lorsig down.;
 #X connect 13 0 4 0;
 #X connect 14 0 6 1;
 #X connect 15 0 6 1;
+#X connect 16 0 12 0;
+#X connect 17 0 16 1;
+#X connect 17 0 18 0;
 #X restore 165 171 pd record _______;
 #N canvas 0 23 450 300 loadbang 0;
 #X obj 42 24 loadbang;

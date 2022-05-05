@@ -32,7 +32,7 @@
 #X obj 336 406 + 2;
 #X obj 334 451 + 1;
 #X obj 275 451 + 1;
-#X msg 275 472 set dacout-\$1;
+#X msg 241 496 set dacout-\$1;
 #X msg 478 433 set dacout-\$1;
 #X obj 484 404 throw~;
 #X obj 73 443 throw~;
@@ -58,6 +58,8 @@
 #X obj 37 47 t b b;
 #X obj 35 15 inlet;
 #X obj 372 17 inlet;
+#X floatatom 284 469 5 0 0 0 - - - 0;
+#X floatatom 340 472 5 0 0 0 - - - 0;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -94,7 +96,9 @@
 #X connect 29 0 31 0;
 #X connect 30 0 29 0;
 #X connect 31 0 34 0;
+#X connect 31 0 60 0;
 #X connect 32 0 33 0;
+#X connect 32 0 59 0;
 #X connect 33 0 36 0;
 #X connect 34 0 35 0;
 #X connect 38 0 39 0;
